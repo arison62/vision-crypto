@@ -1,0 +1,64 @@
+{
+    "banner": {
+        "primary_text": "Achetez, Vendez et Échangez des Cryptos Facilement et en Toute Sécurité",
+        "description_text": "Accédez au monde des cryptomonnaies simplement et gérez vos actifs en toute confiance."
+    },
+    "our_mission": {
+        "primary_text": "Nous offrons une plateforme sécurisée, intuitive et performante pour vos transactions de cryptomonnaies.",
+        "description_text": "Nous croyons en un avenir financier accessible à tous, où l'achat, la vente et l'échange de cryptos sont simples et sécurisés."
+    },
+    "security": {
+        "primary_text": "Sécurité et Confidentialité Garanties",
+        "description_text": "Un cryptage de pointe et un stockage non custodial pour une protection optimale de vos fonds."
+    },
+    "transactions": {
+        "primary_text": "Échanges Instantanés et Transparents",
+        "description_text": "Connectez-vous avec d'autres utilisateurs et échangez vos cryptomonnaies en quelques clics, rapidement et en toute simplicité. Découvrez un marché dynamique où vous pouvez échanger vos cryptomonnaies directement avec d'autres passionnés, selon vos conditions."
+    },
+    "features": {
+        "primary_text": "Découvrez une Application Crypto Sécurisée, Simple et Efficace",
+        "description_text": "Nous imaginons un avenir décentralisé où chacun contrôle pleinement ses actifs financiers, et notre application est la clé pour y accéder."
+    },
+    "faqs": {
+        "primary_text": "Réponses aux Questions Fréquentes",
+        "description_text": "Trouvez rapidement les réponses aux questions les plus courantes concernant notre application.",
+        "faqs": [
+            {
+                "question": "Quelles cryptomonnaies puis-je acheter, vendre et échanger sur votre application ?",
+                "answer": "Nous prenons en charge une large sélection de cryptomonnaies populaires telles que Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Ripple (XRP), et bien d'autres. La liste complète des cryptomonnaies disponibles est constamment mise à jour et visible directement dans l'application."
+            },
+            {
+                "question": "Comment puis-je créer un compte ?",
+                "answer": "La création d'un compte est simple et rapide. Il vous suffit de télécharger l'application, de fournir quelques informations de base et de suivre les étapes de vérification pour sécuriser votre compte."
+            },
+            {
+                "question": "Quels sont les frais de transaction ?",
+                "answer": "Nos frais de transaction sont compétitifs et transparents. Ils peuvent varier en fonction de la paire de cryptomonnaies échangée et du volume de vos transactions. Vous trouverez le détail des frais applicables clairement indiqué avant de confirmer chaque transaction."
+            },
+            {
+                "question": "Comment puis-je déposer des fonds sur mon compte ?",
+                "answer": "Vous pouvez déposer des fonds en utilisant différentes méthodes, y compris les virements bancaires et potentiellement d'autres options de paiement électronique. Les détails des méthodes de dépôt acceptées et les instructions sont disponibles dans la section \"Portefeuille\" de l'application."
+            },
+            {
+                "question": "Comment puis-je retirer des fonds de mon compte ?",
+                "answer": "Le retrait de fonds est tout aussi simple. Vous pouvez généralement retirer vos fonds vers votre compte bancaire ou une autre adresse de portefeuille crypto externe. Les options de retrait disponibles et les étapes à suivre sont détaillées dans la section \"Portefeuille\" de l'application."
+            },
+            {
+                "question": "Mon argent et mes cryptomonnaies sont-ils en sécurité ?",
+                "answer": "La sécurité de vos fonds est notre priorité absolue. Nous utilisons un cryptage de pointe et mettons en œuvre des mesures de sécurité rigoureuses, y compris le stockage non custodial pour la majorité des actifs, afin de protéger vos informations et vos fonds."
+            },
+            {
+                "question": "Qu'est-ce que le stockage non custodial ?",
+                "answer": "Le stockage non custodial signifie que vous avez le contrôle total de vos clés privées. Nous ne détenons pas vos clés, ce qui renforce la sécurité de vos actifs car vous seul pouvez autoriser les transactions."
+            },
+            {
+                "question": "Que faire si j'ai une question ou besoin d'assistance ?",
+                "answer": "Notre équipe de support client est là pour vous aider. Vous pouvez nous contacter via la section \"Aide\" ou \"Support\" de l'application. Nous nous efforçons de répondre à toutes les demandes dans les plus brefs délais."
+            },
+            {
+                "question": "L'application est-elle disponible sur iOS et Android ?",
+                "answer": "Oui, notre application est disponible en téléchargement sur l'App Store (pour iOS) et le Google Play Store (pour Android)."
+            }
+        ]
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "banner": {
+        "primary_text": "Buy, Sell & Trade Crypto Easily and Securely",
+        "description_text": "Access the world of cryptocurrencies simply and manage your assets with confidence."
+    },
+    "our_mission": {
+        "primary_text": "We provide a secure, intuitive, and efficient platform for your cryptocurrency transactions.",
+        "description_text": "We believe in a financial future accessible to everyone, where buying, selling, and trading crypto is simple and secure."
+    },
+    "security": {
+        "primary_text": "Security & Privacy Guaranteed",
+        "description_text": "Industry-leading encryption and non-custodial storage ensure optimal protection of your funds."
+    },
+    "transactions": {
+        "primary_text": "Instant & Transparent Trades",
+        "description_text": "Connect with other users and trade your cryptocurrencies in just a few clicks, quickly and easily. Discover a dynamic marketplace where you can trade your cryptocurrencies directly with other enthusiasts, according to your terms."
+    },
+    "features": {
+        "primary_text": "Discover a Secure, User-Friendly, and Efficient Crypto App",
+        "description_text": "We envision a decentralized future where everyone has full control over their financial assets, and our app is the key to accessing it."
+    },
+    "faqs": {
+        "primary_text": "Frequently Asked Questions",
+        "description_text": "Quickly find answers to the most common questions about our application.",
+        "faqs": [
+            {
+                "question": "What cryptocurrencies can I buy, sell, and trade on your app?",
+                "answer": "We support a wide selection of popular cryptocurrencies such as Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Ripple (XRP), and many others. The complete list of available cryptocurrencies is constantly updated and visible directly in the app."
+            },
+            {
+                "question": "How do I create an account?",
+                "answer": "Creating an account is quick and easy. Simply download the app, provide some basic information, and follow the verification steps to secure your account."
+            },
+            {
+                "question": "What are the transaction fees?",
+                "answer": "Our transaction fees are competitive and transparent. They may vary depending on the cryptocurrency pair being traded and your transaction volume. You will find the details of the applicable fees clearly indicated before confirming each transaction."
+            },
+            {
+                "question": "How do I deposit funds into my account?",
+                "answer": "You can deposit funds using various methods, including bank transfers and potentially other electronic payment options. Details of accepted deposit methods and instructions are available in the \"Wallet\" section of the app."
+            },
+            {
+                "question": "How do I withdraw funds from my account?",
+                "answer": "Withdrawing funds is just as easy. You can usually withdraw your funds to your bank account or another external crypto wallet address. The available withdrawal options and steps to follow are detailed in the \"Wallet\" section of the app."
+            },
+            {
+                "question": "Is my money and cryptocurrency safe?",
+                "answer": "The security of your funds is our top priority. We use state-of-the-art encryption and implement rigorous security measures, including non-custodial storage for the majority of assets, to protect your information and funds."
+            },
+            {
+                "question": "What is non-custodial storage?",
+                "answer": "Non-custodial storage means that you have full control of your private keys. We do not hold your keys, which enhances the security of your assets because only you can authorize transactions."
+            },
+            {
+                "question": "What if I have a question or need assistance?",
+                "answer": "Our customer support team is here to help. You can contact us via the \"Help\" or \"Support\" section of the app. We strive to respond to all inquiries as quickly as possible."
+            },
+            {
+                "question": "Is the app available on iOS and Android?",
+                "answer": "Yes, our app is available for download on the App Store (for iOS) and the Google Play Store (for Android)."
+            }
+        ]
+    }
+}
