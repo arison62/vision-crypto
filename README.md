@@ -17,7 +17,7 @@ Assurez-vous d'avoir Node.js et npm (ou yarn) installés sur votre machine. Vous
 1.  **Cloner le dépôt :**
     ```bash
     git clone https://github.com/arison62/vision-crypto.git
-    cd vision crypto
+    cd vision-crypto
     ```
 
 2.  **Installer les dépendances :**
@@ -40,7 +40,7 @@ Assurez-vous d'avoir Node.js et npm (ou yarn) installés sur votre machine. Vous
     yarn dev
     ```
 
-    Le site web sera accessible à l'adresse `http://localhost:3000` (ou une autre adresse indiquée dans votre terminal).
+    Le site web sera accessible à l'adresse `http://localhost:5173` (ou une autre adresse indiquée dans votre terminal).
 ## Internationalisation (i18n)
 
 Ce site web supporte actuellement deux langues : l'anglais et le français. L'implémentation de l'internationalisation est gérée via un contexte React personnalisé (`src/context/lang-context.tsx`).
