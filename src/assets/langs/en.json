@@ -1,25 +1,35 @@
 {
+    "header": {
+        "title": "Vision Crypto",
+        "button_text": "Download App"
+    },
     "banner": {
         "primary_text": "Buy, Sell & Trade Crypto Easily and Securely",
-        "description_text": "Access the world of cryptocurrencies simply and manage your assets with confidence."
+        "description_text": "Access the world of cryptocurrencies simply and manage your assets with confidence.",
+        "button_text": "Get Started"
     },
     "our_mission": {
+        "title": "Our Mission",
         "primary_text": "We provide a secure, intuitive, and efficient platform for your cryptocurrency transactions.",
         "description_text": "We believe in a financial future accessible to everyone, where buying, selling, and trading crypto is simple and secure."
     },
     "security": {
+        "title": "Security",
         "primary_text": "Security & Privacy Guaranteed",
         "description_text": "Industry-leading encryption and non-custodial storage ensure optimal protection of your funds."
     },
     "transactions": {
+        "title": "Transactions",
         "primary_text": "Instant & Transparent Trades",
         "description_text": "Connect with other users and trade your cryptocurrencies in just a few clicks, quickly and easily. Discover a dynamic marketplace where you can trade your cryptocurrencies directly with other enthusiasts, according to your terms."
     },
     "features": {
+        "title": "Features",
         "primary_text": "Discover a Secure, User-Friendly, and Efficient Crypto App",
         "description_text": "We envision a decentralized future where everyone has full control over their financial assets, and our app is the key to accessing it."
     },
     "faqs": {
+        "title": "FAQs",
         "primary_text": "Frequently Asked Questions",
         "description_text": "Quickly find answers to the most common questions about our application.",
         "faqs": [
@@ -60,5 +70,23 @@
                 "answer": "Yes, our app is available for download on the App Store (for iOS) and the Google Play Store (for Android)."
             }
         ]
+    },
+    "footer": {
+        "about": {
+            "title": "About Us",
+            "description": "We are a company committed to providing sustainable and innovative solutions to meet the needs of our customers."
+        },
+        "newsletter": {
+            "title": "Newsletter",
+            "description": "Sign up to receive our latest news and offers.",
+            "input_placeholder": "Your email",
+            "button_text": "Subscribe"
+        },
+        "contact": {
+            "title": "Contact Us"
+        },
+        "reserved_right": {
+            "text": " Vision Crypto All rights reserved."
+        }
     }
 }

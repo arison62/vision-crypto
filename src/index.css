@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -40,6 +41,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+
 :root {
   --radius: 0.5rem;
   --background: oklch(1 0 0);
@@ -73,6 +75,7 @@
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.723 0.219 149.579);
+  font-family: "Montserrat", sans-serif;
 }
 
 .dark {
@@ -108,19 +111,25 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.527 0.154 150.069);
 }
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-emerald-50
   }
-  
+
 }
 
 @layer components {
   .max-container {
     @apply max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8;
   }
-}
 
+  .right-clip {
+    @apply sm:[clip-path:polygon(0_0,100%_0,100%_80%,80%_80%,80%_100%,0%_100%)];
+  }
+ 
+}

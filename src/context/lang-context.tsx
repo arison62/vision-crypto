@@ -1,4 +1,4 @@
-import { useState, createContext } from "react";
+import { useState, createContext, useContext } from "react";
 import French from "../assets/langs/fr.json";
 import English from "../assets/langs/en.json";
 
@@ -16,7 +16,7 @@ const LangContext = createContext({
 });
 
 export const useLang = () => {
-    const context = LangContext;
+    const context = useContext(LangContext);
     if (!context) {
         throw new Error("useLang must be used within a LangProvider");
     }
