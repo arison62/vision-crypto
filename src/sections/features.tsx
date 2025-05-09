@@ -74,10 +74,9 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
       transition={{
         type: "spring", // Type de transition
         stiffness: 500, // Rigidité du ressort. Plus élevé = plus rapide et "sec"
-        damping: 5, // Amortissement. Plus élevé = moins d'oscillations
-        mass: 1, // Masse de l'objet. Plus élevé = plus lent et plus d'inertie
-        // Vous pouvez aussi ajouter un délai si nécessaire:
-        // delay: 0.1,
+        damping: 30, // Amortissement. Plus élevé = moins d'oscillations
+        mass: 10, // Masse de l'objet. Plus élevé = plus lent et plus d'inertie
+      
       }}
       className={className}
     >
