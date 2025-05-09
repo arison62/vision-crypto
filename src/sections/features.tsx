@@ -185,7 +185,7 @@ const Features = () => {
             </p>
           </AnimatedSection>
 
-          <AnimatedSection className="flex">
+          <AnimatedSection className="hidden md:flex">
             <World />
           </AnimatedSection>
         </div>
