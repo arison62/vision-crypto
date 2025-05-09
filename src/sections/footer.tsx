@@ -112,14 +112,7 @@ const Footer = () => {
               >
                 <Instagram className="h-5 w-5 text-gray-300 hover:text-white transition-colors" />
               </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="aedIn"
-              >
-                <a className="h-5 w-5 text-gray-300 hover:text-white transition-colors" />
-              </a>
+             
               <a
                 href="https://youtube.com"
                 target="_blank"

@@ -11,8 +11,10 @@ import {
 import { Button } from "@/components/ui/button";
 import { getDownloadLink } from "@/lib/utils";
 import { Menu, X, Download } from "lucide-react"; // Importez les icônes nécessaires
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
+import logoImg from "../assets/images/logo.png";
+
 
 const Header = () => {
   const { messages, langName, lang, setLang } = useLang();
@@ -51,7 +53,8 @@ const Header = () => {
     >
       <div className="max-container flex justify-between py-4 items-center">
         <div>
-          <h1 className="text-2xl font-bold text-emerald-900">
+          <h1 className="text-2xl font-bold text-emerald-900 flex items-center gap-2">
+            <img src={logoImg} alt="Logo vision crypto" className="h-12 w-12" />
             {messages.header.title}
           </h1>
         </div>
@@ -78,8 +81,12 @@ const Header = () => {
                 initial={{ x: "-100%" }}
                 animate={{ x: 0 }}
                 exit={{ x: "-100%" }}
-                
-                transition={{ type: "spring", stiffness: 80, damping: 10, duration: 0.2 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 80,
+                  damping: 10,
+                  duration: 0.2,
+                }}
                 className={cn(
                   "fixed top-0 left-0 h-full w-full bg-emerald-50 border-r border-emerald-100",
                   "z-50 p-4 flex flex-col gap-4 shadow-lg",
@@ -96,10 +103,7 @@ const Header = () => {
                     <X className="h-6 w-6" />
                   </Button>
                 </div>
-                <Select
-                  defaultValue={lang}
-                  onValueChange={setLang}
-                >
+                <Select defaultValue={lang} onValueChange={setLang}>
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder={langName} />
                   </SelectTrigger>

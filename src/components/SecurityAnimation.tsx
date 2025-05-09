@@ -98,7 +98,7 @@ export default function CryptoAppAnimation() {
     setAppState("encrypting");
   };
 
-  // Interface de l'application Crypto (Thème Clair)
+  // Interface de l'application
   const CryptoAppInterface = () => (
     <div className="flex flex-col  bg-white text-gray-800 p-3">
       <div className="flex justify-between items-center mb-4">
@@ -188,12 +188,12 @@ export default function CryptoAppAnimation() {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center w-full py-10">
+    <div className="flex flex-col items-center justify-center w-fit py-10 pointer-events-auto">
       {/* Téléphone */}
       <div ref={phoneRef} className="relative">
         {/* Corps du téléphone */}
         <div
-          className="relative flex justify-center h-[620px] w-[320px] border-[12px] border-black rounded-[40px] bg-slate-50" // Phone body light gray
+          className="relative flex justify-center h-[590px] w-[300px] border-[12px] border-black rounded-[40px] bg-slate-50" // Phone body light gray
           style={{ boxShadow: "8px 8px 10px 0px rgba(0,0,0,0.2)" }} // Softer shadow
         >
           {/* Encoche/Dynamic Island */}

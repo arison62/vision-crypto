@@ -91,8 +91,8 @@ const World = ({ className }: { className?: string }) => {
   return (
     <div className={cn(className)}>
       <Globe
-        width={800}
-        height={800}
+        width={760}
+        height={760}
         backgroundColor="rgba(0,0,0,0.0)"
         globeImageUrl="//cdn.jsdelivr.net/npm/three-globe/example/img/earth-night.jpg"
         labelsData={places}

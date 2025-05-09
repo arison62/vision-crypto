@@ -5,6 +5,7 @@ import { getDownloadLink } from "@/lib/utils";
 import appStoreLogo from "@/assets/images/apple-logo.svg";
 import googlePlayLogo from "@/assets/images/googleplay.svg";
 import { TransactionAnimation } from "@/components/TransactionAnimation";
+import ShinyText from "@/components/ui/shiny-text";
 
 const Banner = () => {
   const { messages } = useLang();
@@ -14,18 +15,23 @@ const Banner = () => {
       <div className="max-container flex flex-col lg:flex-row gap-8">
         <div className="p-6 rounded-4xl bg-white right-clip">
           <div className="space-y-6">
-            <p className="text-4xl sm:text-6xl font-bold text-emerald-900">
+            <p className="text-4xl sm:text-5xl font-bold text-emerald-900">
               {messages.banner.primary_text}
             </p>
-            <p className="text-2xl text-emerald-900">
-              {messages.banner.description_text}
-            </p>
+            <div className="text-2xl text-emerald-900">
+              <ShinyText speedInMs={10000}>
+                {messages.banner.description_text}
+              </ShinyText>
+            
+            </div>
             <a href={getDownloadLink()} target="_blank" rel="noreferrer">
               <Button
                 size={"lg"}
                 className="bg-yellow-600 text-white text-lg hover:bg-orange-400"
               >
-                {messages.banner.button_text}
+                <ShinyText speedInMs={5000}>
+                  {messages.banner.button_text}
+                </ShinyText>
                 <ArrowUpRight />
               </Button>
             </a>
@@ -36,7 +42,7 @@ const Banner = () => {
                 variant={"outline"}
                 className="bg-white text-emerald-900 border-2 border-emerald-900"
               >
-                App Store
+                <ShinyText speedInMs={4000}>App Store</ShinyText>
                 <img
                   src={appStoreLogo}
                   alt="App Store"
@@ -53,7 +59,7 @@ const Banner = () => {
                 variant={"outline"}
                 className="bg-white text-emerald-900 border-2 border-emerald-900"
               >
-                Google Play
+                <ShinyText speedInMs={4000}>Google Play</ShinyText>
                 <img
                   src={googlePlayLogo}
                   alt="Google Play"
