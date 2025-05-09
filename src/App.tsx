@@ -1,8 +1,8 @@
 
-import Banner from "./components/sections/banner";
-import Features from "./components/sections/features";
-import Footer from "./components/sections/footer";
-import Header from "./components/sections/header";
+import Banner from "./sections/banner";
+import Features from "./sections/features";
+import Footer from "./sections/footer";
+import Header from "./sections/header";
 
 
 function App() {

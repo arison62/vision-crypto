@@ -1,6 +1,5 @@
 import { useLang } from "@/context/lang-context";
-import banner2 from "@/assets/images/banner.webp";
-import World from "../world";
+import World from "../components/world";
 import {
   Accordion,
   AccordionContent,
@@ -9,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState, ReactNode } from "react";
+import CryptoAppAnimation from "../components/SecurityAnimation";
 
 // Hook personnalisé pour détecter quand un élément est visible
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -44,13 +44,23 @@ const useOnScreen = (ref: any, rootMargin = "0px") => {
   return isVisible;
 };
 
+interface AnimatedSectionProps {
+  className?: string;
+  children?: ReactNode;
+}
+
+
 // Composant pour animer l'apparition
-const AnimatedSection: React.FC<{ className?: string, children?: ReactNode }> = ({ children, className }) => {
-  const ref = useRef(null);
+const AnimatedSection: React.FC<AnimatedSectionProps> = ({
+  children,
+  className,
+}) => {
+  const ref = useRef<HTMLDivElement>(null); // Type correct pour la ref
   const isVisible = useOnScreen(ref);
 
+  // Variantes pour l'animation d'entrée
   const variants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 75 }, // Augmentation de y pour un effet plus prononcé
     visible: { opacity: 1, y: 0 },
   };
 
@@ -60,7 +70,15 @@ const AnimatedSection: React.FC<{ className?: string, children?: ReactNode }> = 
       initial="hidden"
       animate={isVisible ? "visible" : "hidden"}
       variants={variants}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      // Modification de la transition pour un effet "spring" (élastique)
+      transition={{
+        type: "spring", // Type de transition
+        stiffness: 500, // Rigidité du ressort. Plus élevé = plus rapide et "sec"
+        damping: 5, // Amortissement. Plus élevé = moins d'oscillations
+        mass: 1, // Masse de l'objet. Plus élevé = plus lent et plus d'inertie
+        // Vous pouvez aussi ajouter un délai si nécessaire:
+        // delay: 0.1,
+      }}
       className={className}
     >
       {children}
@@ -105,11 +123,11 @@ const Features = () => {
 
         <div
           data-lang-id="security"
-          className="mt-20 flex justify-between items-center"
+          className="mt-20 flex flex-col-reverse md:flex-row pt-6 bg-white h-full items-center justify-center gap-1"
         >
-          <AnimatedSection className="rounded-tr-3xl p-4 sm:flex sm:flex-1/2 hidden bg-gray-500">
-            <img src={banner2} alt="security" className="w-[50%] mx-auto" />
-          </AnimatedSection>
+        
+           <CryptoAppAnimation />
+         
           <AnimatedSection className="flex flex-col items-center space-y-6">
             <h2
               className="text-xl rounded-xl 
@@ -167,7 +185,7 @@ const Features = () => {
             </p>
           </AnimatedSection>
 
-          <AnimatedSection className="hidden md:flex">
+          <AnimatedSection className="flex">
             <World />
           </AnimatedSection>
         </div>

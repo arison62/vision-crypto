@@ -87,6 +87,10 @@
         },
         "reserved_right": {
             "text": " Vision Crypto All rights reserved."
+        },
+        "social_media": {
+            "title": "Follow Us",
+            "description": "Stay connected with us on social media to get the latest updates and news."
         }
     }
 }

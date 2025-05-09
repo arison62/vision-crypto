@@ -4,13 +4,14 @@ import { ArrowUpRight } from "lucide-react";
 import { getDownloadLink } from "@/lib/utils";
 import appStoreLogo from "@/assets/images/apple-logo.svg";
 import googlePlayLogo from "@/assets/images/googleplay.svg";
-import bannerImage from "@/assets/images/banner2.webp";
+import { TransactionAnimation } from "@/components/TransactionAnimation";
 
 const Banner = () => {
   const { messages } = useLang();
+
   return (
     <div data-lang-id="banner" className="mt-16">
-      <div className="max-container flex gap-8">
+      <div className="max-container flex flex-col lg:flex-row gap-8">
         <div className="p-6 rounded-4xl bg-white right-clip">
           <div className="space-y-6">
             <p className="text-4xl sm:text-6xl font-bold text-emerald-900">
@@ -29,7 +30,6 @@ const Banner = () => {
               </Button>
             </a>
           </div>
-
           <div className="flex gap-4 mt-8">
             <a href={getDownloadLink("ios")} target="_blank" rel="noreferrer">
               <Button
@@ -63,11 +63,7 @@ const Banner = () => {
             </a>
           </div>
         </div>
-        <div className="hidden lg:block max-h-[500px]
-        rounded-tr-4xl 
-        overflow-hidden p-6 border bg-amber-200">
-          <img src={bannerImage} alt="Banner" />
-        </div>
+        <TransactionAnimation />
       </div>
     </div>
   );

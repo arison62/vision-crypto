@@ -93,6 +93,7 @@ const World = ({ className }: { className?: string }) => {
       <Globe
         width={800}
         height={800}
+        backgroundColor="rgba(0,0,0,0.0)"
         globeImageUrl="//cdn.jsdelivr.net/npm/three-globe/example/img/earth-night.jpg"
         labelsData={places}
         labelLat={(d) => (d as Place).properties.latitude}
